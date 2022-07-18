@@ -1,7 +1,8 @@
 import reyhan from './img/reyhan.svg';
 
 const Navbar = ({nav, setNav}) => {
-    
+    // let [hid,setHid] = useState(true);
+    // let [op, setOp] = useState(0);
     return(
         <div className="flex flex-row justify-between bg-gradient-to-b from-first2 to-first">
             <div onClick={()=>{setNav(!nav)}} className="imenu m-4 p-1 z-40 transition-all duration-300 cursor-pointer" id="button-nav">
@@ -17,7 +18,14 @@ const Navbar = ({nav, setNav}) => {
                 </svg>
             </div>
             <div className="text-slate-900 text-xl my-2 py-2 pb-5 border-b-2 border-slate-400"><h1>Reyhan Andrea Firdaus</h1></div>
-            <div className="w-11 h-11 rounded-full m-2 py-2 cursor-pointer"><img src={reyhan} alt="Reyhan" className="relative -top-7 right-1 pt-1 scale-90 hover:animate-spin"  /></div>
+            <div  className="w-11 h-11 rounded-full m-2 py-2 cursor-pointer">
+                <img src={reyhan} alt="Reyhan" className="relative -top-7 right-1 pt-1 scale-90 hover:animate-spin"  />
+                {/* <div className={`${hid ? 'hidden' : 'flex'} flex-col w-80 h-[450px] rounded-lg left-0 fixed z-30 top-60  shadow-lg`}>
+                    <img onClick={()=>{setOp(op+1)}} src={reyhan} alt="Reyhan" className=" scale-75 relative -top-[45%] z-30" />
+                    
+                </div>
+                <div className={`${op === 9 ? 'absolute' : 'hidden'}`}>HAlooooo</div> */}
+            </div>
         </div>
     )
 }

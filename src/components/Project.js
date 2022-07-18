@@ -55,13 +55,13 @@ const Project = ({textLang}) => {
     }, [isipro])
 
   return(
-    <div className="project p-1  " id="project">
+    <div  className="project p-1  " id="project">
                 <div>
                 <h2 className="text-center font-semibold mt-6 mb-4 ">{textLang['nav'][3]}</h2>
                 </div>
                 <div className="md:overflow-hidden  md:h-[13em] md:flex md:flex-col w-[100%] md:flex-wrap">
                 <div className="pinit erenpro w-full">
-                <div className="hidden md:block w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
+                <div onClick={()=>{window.location = 'https://erenpro.herokuapp.com'}} className="hidden md:block w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
                     <div className="text-center ">
                         <h2>{textLang['project'][isipro[0]]}</h2>
                     </div>
@@ -73,7 +73,7 @@ const Project = ({textLang}) => {
                         </div>
                     </div>
                 </div>
-                <div className="md:hidden w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
+                <div onClick={()=>{window.location = 'https://erenpro.herokuapp.com'}} className="md:hidden w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
                     <div className="text-center ">
                         <h2>{textLang['project'][0]}</h2>
                     </div>

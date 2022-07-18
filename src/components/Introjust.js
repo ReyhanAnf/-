@@ -20,7 +20,7 @@ const Introjust = ({setSel, sel, lang, setLang, textLang}) => {
                         <span className="block font-serif py-2 my-1 text-lg katakata">
                         {textLang['hero'][2]}
                         </span><br />
-                    <div className="text-sm md:hidden">
+                    <div className="text-sm">
                         <div className="bg-second/75 w-[80%] h-10 rounded-xl mx-auto shadow-lg hover:shadow-2xl hover:ring-1 transition-all duration-300 cursor-pointer animate-bounce">
                             <div onClick={()=>{setSel(!sel)}} className="pt-2 readmore">{textLang['hero'][3]}</div>
                         </div>  

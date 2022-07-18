@@ -9,7 +9,7 @@ import Contact from "./Contact";
 const Content = ({setSel, sel, textLang}) => {
    
     return(
-        <div  className={`${ sel ? 'top-[20%]' : 'top-[90%]'} isi pb-64 h-screen md:pb-0 z-30 absolute md:static md:grid md:grid-cols-2 md:gap-3 top-[90%] nav-hero md:h-auto transition-all duration-75 bg-second/90 shadow-xl shadow-first2 rounded-t-3xl  overflow-y-scroll `}>
+        <div  className={`${ sel ? 'top-[20%]' : 'top-[50%]'} isi pb-64 h-screen md:pb-0 z-30 absolute md:static md:grid md:grid-cols-2 md:gap-3 top-[90%] nav-hero md:h-auto transition-all duration-75 bg-second/90 shadow-xl shadow-first2 rounded-t-3xl  overflow-y-scroll `}>
 
             <div className="search flex flex-row  justify-evenly mt-9 md:absolute md:-top-4 md:left-[3.5%] md:scale-75 ">
                 <div className="rounded-md shadow-sfirst1 ">
