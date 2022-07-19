@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eb8ae41a.css",
-    "main.js": "/portfolio/static/js/main.b7b9a0a2.js",
-    "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/erentech.jpg": "/portfolio/static/media/erentech.c9861b0d37d9aeecae42.jpg",
-    "static/media/erenpro.jpg": "/portfolio/static/media/erenpro.7fb03664d726997c2a43.jpg",
-    "static/media/reyhan.svg": "/portfolio/static/media/reyhan.429b8919ad34e01c19eeaaf95ff948bb.svg",
-    "static/media/instagram.svg": "/portfolio/static/media/instagram.c0113239bc87d217189205448af0e84a.svg",
-    "index.html": "/portfolio/index.html",
-    "main.eb8ae41a.css.map": "/portfolio/static/css/main.eb8ae41a.css.map",
-    "main.b7b9a0a2.js.map": "/portfolio/static/js/main.b7b9a0a2.js.map",
-    "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/-/static/css/main.54330c88.css",
+    "main.js": "/-/static/js/main.f23113d5.js",
+    "static/js/787.128fc6e9.chunk.js": "/-/static/js/787.128fc6e9.chunk.js",
+    "static/media/erentech.jpg": "/-/static/media/erentech.c9861b0d37d9aeecae42.jpg",
+    "static/media/erenpro.jpg": "/-/static/media/erenpro.7fb03664d726997c2a43.jpg",
+    "static/media/reyhan.svg": "/-/static/media/reyhan.429b8919ad34e01c19eeaaf95ff948bb.svg",
+    "static/media/instagram.svg": "/-/static/media/instagram.c0113239bc87d217189205448af0e84a.svg",
+    "index.html": "/-/index.html",
+    "main.54330c88.css.map": "/-/static/css/main.54330c88.css.map",
+    "main.f23113d5.js.map": "/-/static/js/main.f23113d5.js.map",
+    "787.128fc6e9.chunk.js.map": "/-/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb8ae41a.css",
-    "static/js/main.b7b9a0a2.js"
+    "static/css/main.54330c88.css",
+    "static/js/main.f23113d5.js"
   ]
 }

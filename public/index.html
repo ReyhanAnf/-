@@ -30,6 +30,7 @@
   <body class="App h-screen overflow-hidden md:overflow-auto mx-auto bg-gradient-to-b from-first to-first2">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="blank bg-first text-center h-[100vh] text-xl pt-14">Belum Mendukung Layar Dekstop</div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -40,5 +41,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      if(window.innerWidth > 800){
+        document.querySelector('#root').classList.add('hidden');
+        document.querySelector('.blank').classList.add('block');
+        alert('Sorry...Style Web Not Support Dekstop');
+      }else{
+        document.querySelector('#root').classList.add('block');
+        document.querySelector('.blank').classList.add('hidden');
+
+      }
+    </script>
   </body>
 </html>

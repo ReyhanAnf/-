@@ -9,7 +9,7 @@ import Contact from "./Contact";
 const Content = ({setSel, sel, textLang}) => {
    
     return(
-        <div  className={`${ sel ? 'top-[20%]' : 'top-[50%]'} isi pb-64 h-screen md:pb-0 z-30 absolute md:static md:grid md:grid-cols-2 md:gap-3 top-[90%] nav-hero md:h-auto transition-all duration-75 bg-second/90 shadow-xl shadow-first2 rounded-t-3xl  overflow-y-scroll `}>
+        <div  className={`${ sel ? 'top-[20%]' : 'top-[60%]'} isi pb-64 h-screen md:pb-0 z-30 absolute md:static md:grid md:grid-cols-2 md:gap-3 top-[90%] nav-hero md:h-auto transition-all duration-75 bg-second/90 shadow-xl shadow-first2 rounded-t-3xl  overflow-y-scroll `}>
 
             <div className="search flex flex-row  justify-evenly mt-9 md:absolute md:-top-4 md:left-[3.5%] md:scale-75 ">
                 <div className="rounded-md shadow-sfirst1 ">
@@ -34,6 +34,7 @@ const Content = ({setSel, sel, textLang}) => {
             <div>
                 <div className="footer text-center text-sm p-1">
                 <div className="w-30 my-7 px-4  h-8 font-sans rounded-xl shadow-md hover:scale-105 cursor-pointer transition-all duration-300 ring-1 ring-first2 bg-first mx-auto">Unduh CV Saya</div>
+                <div className="w-24 my-7 px-4 py-2  h-8 font-sans rounded-xl shadow-md hover:scale-105 cursor-pointer transition-all duration-300 ring-1 ring-first2 bg-first mx-auto"><a href="https://github.com/ReyhanAnf/-/">Lihat Resource</a></div>
                 {textLang['credit'][0]} <b>{textLang['credit'][1]}</b>
                 </div>
                 <div className="footer text-center text-sm p-1">

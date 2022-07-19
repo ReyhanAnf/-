@@ -1,7 +1,0 @@
-"devDependencies": {
-    "gh-pages": "^4.0.0"
-     // "homepage": "http://reyhananf.github.io/portfolio",
-
-    // "predeploy":"npm run build",
-    // "deploy":"gh-pages -d build",
-  }
