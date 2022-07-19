@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/-/static/css/main.29a9fcd9.css",
-    "main.js": "/-/static/js/main.f2a87f83.js",
+    "main.js": "/-/static/js/main.a256d064.js",
     "static/js/787.128fc6e9.chunk.js": "/-/static/js/787.128fc6e9.chunk.js",
     "static/media/erentech.jpg": "/-/static/media/erentech.c9861b0d37d9aeecae42.jpg",
     "static/media/erenpro.jpg": "/-/static/media/erenpro.7fb03664d726997c2a43.jpg",
@@ -9,11 +9,11 @@
     "static/media/instagram.svg": "/-/static/media/instagram.c0113239bc87d217189205448af0e84a.svg",
     "index.html": "/-/index.html",
     "main.29a9fcd9.css.map": "/-/static/css/main.29a9fcd9.css.map",
-    "main.f2a87f83.js.map": "/-/static/js/main.f2a87f83.js.map",
+    "main.a256d064.js.map": "/-/static/js/main.a256d064.js.map",
     "787.128fc6e9.chunk.js.map": "/-/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29a9fcd9.css",
-    "static/js/main.f2a87f83.js"
+    "static/js/main.a256d064.js"
   ]
 }
