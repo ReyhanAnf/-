@@ -1,20 +1,30 @@
 import { useEffect, useState } from "react";
+import './animate.css';
 
 const Experience = ({textLang}) => {
+    let [anim, setAnim] = useState(0);
     let [kol, setKol] = useState(0);
     let [kval, setKval] = useState(0);
+    let [sem, setSem] = useState(0);
 
     let autoSlide = true;
     let slideInterval;
-    let [intervalTime, setIntervalTime] = useState(5000);
+    let [intervalTime, setIntervalTime] = useState(2000);
 
     function nextSlide(){
-        if(kol <= 10){
-        setKol(kol+1);
-        }else if(kol > 10){
-            setKol(0)
+        if(kol < textLang['certificates'].length){
+            setTimeout(()=>{
+                setKol(kol+1);
+                setSem(kol)
+            },1500);
+        }else if(kol >= textLang['certificates'].length){
+            setTimeout(()=>{
+                setKol(0);
+                setSem(kol);
+            },1500);
         }
         setKval(kol%4);
+        setAnim(1);
     }
 
     function autoS(){
@@ -22,41 +32,39 @@ const Experience = ({textLang}) => {
     }
 
     useEffect(()=>{
-        setKval(0)
+        setKval(0);
     },[])
 
     useEffect(()=>{
         if(autoSlide){
             autoS();
+            setAnim(0);
         }
         return () => clearInterval(slideInterval)
     }, [kol])
 
     return(
-        <div className="eksperience" id="eksperience">
+        <div onClick={()=>{setAnim(!anim)}} className="eksperience" id="eksperience">
             <div>
             <h2 className="text-center font-semibold my-4">{textLang['nav'][2]}</h2>
-            
             </div>
-            <div className="boxeks w-[90%] h-[8em] bg-first flex rounded-lg mx-auto   my-3 shadow-sfirst2">
-                <div className="isieks w-full flex h-[94%] transition-all duration-300">
-                    <div onClick={()=>{nextSlide()}} onDoubleClick={()=>{setIntervalTime(50)}} className="w-[75%] h-[90%] bg-second rounded-lg my-2 mx-auto flex text-center items-center shadow-inner shadow-first2">
-                         {textLang['exp'][kval]}
-                    </div>
-                    
-                    <div className="w-[20%] h-[90%] flex flex-wrap justify-between mx-auto items-center my-2">
-                    <div onClick={()=>{setKol(0)}} className={`${kol === 0 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(4)}} className={`${kol === 4 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(1)}} className={`${kol === 1 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(2)}} className={`${kol === 2 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(8)}} className={`${kol === 8 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(5)}} className={`${kol === 5 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(6)}} className={`${kol === 6 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(9)}} className={`${kol === 9 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
-                    <div onClick={()=>{setKol(10)}} className={`${kol === 10 ? 'bg-slate-200':'bg-slate-700'} i w-[30%] h-[30%] rounded-sm hover:shadow-sfirst2`} />
+            <div className="Blog p-1" id="blog">
+            <div>
+            <h2 className="text-center font-semibold mt-6 mb-4 ">{textLang['exp'][4]}</h2>
+            </div>
+            <div className={`${anim ? 'slides':'nothing'} coming soon w-full`}>
+            <div className="w-[90%] h-[14em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
+                <div className="text-center ">
+                <h2>Certificate</h2>
+                </div>
+                <div className="flex flex-row h-[110%] p-2 group w-full mx-auto self-center">
+                    <div className= {`bg-clip-content justify-self-center w-full bg-[url('${textLang['certificates'][kol]}')] bg-center  bg-cover bg-scroll rounded-lg h-[100%] px-2 flex items-center group-hover:bg-opacity-75 shadow-inner shadow-first2`}>
+                        
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
         </div>
     )
 }

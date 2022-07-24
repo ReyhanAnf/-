@@ -8,6 +8,10 @@ const text_data = {
             "Lulusan kelas bootcamp Dicoding dibidang data dan pembelajaran mesin",
             "Telah dipercayai google untuk memasang iklan pada blog",
         ],
+        certificates :[
+                'https://www.sololearn.com/certificates/course/en/21185614/1024/landscape/png',
+                'https://www.sololearn.com/certificates/course/en/21185614/1073/landscape/png'
+        ],
         project: ["Prediksi Berita","bg-[url('img/erenpro.jpg')]",
                 "Ketika kamu bingung dengan artikel berita yang kamu baca, kamu bisa meminta bantuan mesin",
                 "Subtitel Otomatis","Segera",
@@ -34,6 +38,10 @@ const text_data = {
         exp: ["Has article that discuss wireless",
             "Active following the activity bootcamp",
             "Google has trusted to place ads on blog",
+        ],
+        certificates :[
+                'img/cjs.png',
+                'img/cpy.png'
         ],
         project: ["Predict news","bg-[url('img/erenpro.jpg')]",
                 "when you are confused by the news you read, you can ask for machine help",

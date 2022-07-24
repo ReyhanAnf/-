@@ -84,10 +84,10 @@ const Contact = ({textLang}) => {
                             </div>
                             <div className="flex mt-10 mxx-3 justify-evenly">
                                 <div onClick={()=>{setQr(!qr)}} className="w-auto h-auto bg-first2 p-2 rounded-md shadow-xl mb-6 cursor-pointer">Cancel</div>
-                                <div className="w-auto h-auto bg-first2 p-2 rounded-md shadow-xl mb-6"><a href={dataqr['url'][iqr]}>Lanjut</a></div>
+                                <div onClick={()=>{window.location = dataqr['url'][iqr]}} className="w-auto h-auto bg-first2 p-2 rounded-md shadow-xl mb-6">Lanjut</div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 </div>
                 <div className="bg-first w-16 h-16  rounded-md p-2 group shadow-sfirst2">
